@@ -1,0 +1,42 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script>
+			function showSubmenu(id){
+				if($(id).css("display") == "none")
+					$(id).css("display","block");
+			
+				else
+					$(id).css("display","none");	
+			}
+
+			function changeFrame(url){
+				$("#content-frame").attr("src",url);
+			}
+
+		</script>		
+
+	</head>
+
+	<body>
+
+		<div id="header"> Logan Holland --- CS 313</div>
+
+		<div id="menu"> 
+			<span class="submenu" onclick="showSubmenu('#submenu-content1')">    ABOUT    
+			</span>
+			<span class="submenu" onclick="showSubmenu('#submenu-content2')">     ASSIGNMENTS     
+			</span>
+		<div class="submenu-content" id="submenu-content1">     <span onclick="changeFrame('bio.html')"> Bio </span>  </div>
+		<div class="submenu-content" id="submenu-content2"> Assignments </div>
+		</div>
+
+		<div id="main">
+			<iframe src="homepage.html" id="content-frame">
+			</iframe>
+		</div>
+
+	</body>
+</html>
