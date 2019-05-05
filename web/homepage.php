@@ -6,7 +6,7 @@
 	<?php
 		$file = fopen("counter.txt", "r+") or die("Unable to open file!");
 		$count = fgets($file);
-		$count = (int) $count + 1;
+		$count++;
 		echo $count;
 		fwrite($file, $count);
 		fclose($file);
