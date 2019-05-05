@@ -10,7 +10,7 @@
 		echo $count;
 		fclose($file)
 
-		$write_file = fopen("counter.txt", "w") or die("Error opening file");
+		$write_file = fopen("counter.txt", "w") or die("Error");
 		fwrite($write_file, $count);
 		fclose($write_file);
 	?> 
