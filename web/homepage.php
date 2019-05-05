@@ -8,7 +8,7 @@
 		$count = (int) fgets($file);
 		$count++;
 		echo $count;
-		ftruncate($file, 0);
+		ftruncate($file, 1);
 		fwrite($file, $count);
 		fclose($file)
 	?> 
