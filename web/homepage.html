@@ -1,1 +1,13 @@
 <p> This is the homepage for my page for CS 313 at Brigham Young University - Idaho.  Above you can navigate to the assignments I will be completing this semester as well as a short bio about me, my interests, and my projects. </p>
+
+<p> Counter:
+
+
+	<?php
+		$myfile = fopen("counter.txt", "r+") or die("Unable to open file!");
+		$count = fread($myfile,filesize("counter.txt"));
+		$count = $count + 1;
+		fwrite($myfile, $count);
+		fclose($myfile);
+	?>
+</p>
