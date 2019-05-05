@@ -4,10 +4,13 @@
 
 
 	<?php
-		$file = fopen("counter.txt", "w+") or die("Error opening file");
+		$file = fopen("counter.txt", "r") or die("Error opening file");
 		$count = (int) fgets($file);
 		$count++;
 		echo $count;
+		fclose($file)
+
+		$file = fopen("counter.txt", "w") or die("Error opening file");
 		fwrite($file, $count);
 		fclose($file);
 	?> 
