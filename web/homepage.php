@@ -4,7 +4,7 @@
 
 
 	<?php
-		$file = fopen("counter.txt", "r") or die("Error opening file");
+		$file = fopen("counter.txt", "r+") or die("Error opening file");
 		$count = (int) fgets($file);
 		$count++;
 		echo $count;
