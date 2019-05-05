@@ -1,6 +1,6 @@
 <p> This is the homepage for my page for CS 313 at Brigham Young University - Idaho.  Above you can navigate to the assignments I will be completing this semester as well as a short bio about me, my interests, and my projects. </p>
 
-<p> Counter:
+<p> Visitor counter:
 
 
 	<?php
@@ -8,7 +8,7 @@
 		$count = (int) fgets($file);
 		$count++;
 		echo $count;
-		ftruncate($file, 1);
+		ftruncate($file, 0);
 		fwrite($file, $count);
 		fclose($file)
 	?> 
