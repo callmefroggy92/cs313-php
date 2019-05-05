@@ -8,11 +8,8 @@
 		$count = (int) fgets($file);
 		$count++;
 		echo $count;
+		fwrite($file, $count);
 		fclose($file)
-
-		$write_file = fopen("counter.txt", "w") or die("Error");
-		fwrite($write_file, $count);
-		fclose($write_file);
 	?> 
 
 </p>
