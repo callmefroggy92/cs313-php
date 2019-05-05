@@ -4,11 +4,6 @@
 
 
 	<?php
-		$myfile = fopen("counter.txt", "r+") or die("Unable to open file!");
-		$count = fread($myfile,filesize("counter.txt"));
-		$count = $count + 1;
-		echo $count;
-		fwrite($myfile, $count);
-		fclose($myfile);
+		echo "Hello World!";
 	?>
 </p>
