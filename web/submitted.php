@@ -10,7 +10,7 @@
 
 		<p> Places visited: 
 			<?php 
-			if(isset($_POST["africa"]) && $_POST["africa"] == "Yes"){
+			if(isset($_POST["africa"])){
 				echo "Africa";
 				}
 			?>
