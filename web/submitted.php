@@ -13,6 +13,24 @@
 			if(isset($_POST["africa"])){
 				echo "Africa";
 				}
+			if(isset($_POST["antartica"])){
+				echo "Antartica";
+				}
+			if(isset($_POST["australia"])){
+				echo "australia";
+				}
+			if(isset($_POST["asia"])){
+				echo "asia";
+				}
+			if(isset($_POST["europe"])){
+				echo "Europe";
+				}
+			if(isset($_POST["northAmerica"])){
+				echo "North America";
+				}
+			if(isset($_POST["southAmerica"])){
+				echo "South America";
+				}
 			?>
 	</body>
 </html>
