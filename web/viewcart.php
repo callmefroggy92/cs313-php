@@ -16,7 +16,7 @@
 				echo "<p> Super Death Robot -- $250,000 
 					<br> Item in cart: <input type='checkbox' name='superdeathrobot' value='Super Death Robot' checked> </p> ";
 			}
-			echo "<input type='submit' value='Update Cart' form.action='viewcart.php'> <input type='submit' value='Proceed to Checkout' form.action='checkoutphp'></form>"
+			echo "<input type='submit' value='Update Cart' form.action='viewcart.php'> <input type='submit' value='Proceed to Checkout' form.action='checkout.php'></form>"
 		?>
 	</body>
 </html>
