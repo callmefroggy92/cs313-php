@@ -1,9 +1,19 @@
 <html>
 	<head>
+		<script>
+
+		</script>
 	</head>
 
 	<body>
 
+		<?php
+			session_start();
+			foreach ($_POST as $param_name => $param_val) {
+				echo $param_val;
+ 				$_SESSION[$param_name] = $param_val;
+			}
+		?>
 		<form action="confirmation.php" method="post">
 			<p> Finish your evil purchase now!  Please fill out the form below: </p>
 
