@@ -6,6 +6,7 @@
 		
 		<?php
 			echo "Shopping cart: <br>";
+			echo $_POST["test"];
 			if(isset($_POST["superdeathray"])){
 				echo "Super Death Ray -- $1,000,000";
 			}
