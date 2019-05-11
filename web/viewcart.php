@@ -16,7 +16,7 @@
 				echo "<p> Super Death Robot -- $250,000 
 					<br> <input type='checkbox' name='superdeathrobot' ischecked=true> </p> ";
 			}
-			echo "<input type='submit'></form>
+			echo "<input type='submit'></form>"
 		?>
 
 	</body>
