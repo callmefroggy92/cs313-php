@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 	<head>
 		<script>
@@ -8,9 +9,7 @@
 	<body>
 
 		<?php
-			session_start();
 			foreach ($_POST as $param_name => $param_val) {
-				echo $param_val;
  				$_SESSION[$param_name] = $param_val;
 			}
 		?>
