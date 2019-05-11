@@ -1,7 +1,7 @@
 body{
 	width: 98%;
 	height: 100%;
-	background-color: #DDD;
+	background-color: #FFD;
 }
 
 #header{
@@ -10,12 +10,12 @@ body{
 	background-color: #99C;
 	padding: 10px;
 	margin: 10px;
-	width:60%;
+	width:100%;
 }
 
 #menu{
 	border-radius: 15px;
-	background-color:#639;
+	background-color:#98B;
 	padding: 10px;
 	margin: 10px;
 	width:60%;
@@ -35,14 +35,14 @@ body{
 	width:100%;
 	padding: 0px;
 	margin: 0px;
-	background-color: #A8D;
+	background-color: #CAE;
 	display: none;
 	z-index: 2;
 }
 
 #main{
 	border-radius: 15px;
-	background-color:#639;
+	background-color:#98B;
 	padding: 10px;
 	margin: 10px;
 	width:60%;
