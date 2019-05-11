@@ -12,7 +12,7 @@
 
 		<?php 
 			foreach ($_SESSION as $param_name => $param_val) {
-    				echo $param_val;
+    				echo $param_val . "<br>";
 			}	
 		?>
 		<p> We look forward to assisting you on future evil projects! </p>
