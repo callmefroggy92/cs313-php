@@ -1,34 +1,59 @@
 <html>
 	<head>
+		<script>
+			function toggleVisible(id){
+				if($(id).css("display") == "none")
+					$(id).css("display","block");
+				else
+					$(id).css("display","none");	
+			}
+
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<style>
+			.iteminfo{
+				display: none;
+			}
+			p{
+				cursor: pointer;
+			}
+			img{
+				height:100px;
+				width:100px;
+				display:block;
+				float:left;
+			}
+		</style>
 	</head>
 
 	<body>
 		<form action="viewcart.php" method="post">
 
-				<p> Welcome to McEvil's Emporium for Super Villans!: </p>
-				<p> Super Death Robot <br>
-				Tired of doing all the dirty work yourself?  Get a Super Death Robot!  Guaranteed to follow your commands exactly, no matter how evil!  Asimov's Three Laws DO NOT apply!
-				<br> Add to shopping cart --  <input type="checkbox" name="superdeathrobot"> </p>
+				<p> Welcome to McEvil's Emporium for Super Villans! <br> Click on any item for more details! </p>
+				<p onclick="toggleVisible('#robot')"> Super Death Robot <br>
+				<span class="iteminfo" id="robot"><img src="deathrobot.jpg"> Tired of doing all the dirty work yourself?  Get a Super Death Robot!  Guaranteed to follow your commands exactly, no matter how evil!  Asimov's Three Laws DO NOT apply!  
+				</span> 
+				Add to shopping cart --  <input type="checkbox" name="superdeathrobot"></p><br><br>
 
-				<p> Super Death Ray<br>
-				You can't go wrong with the Super Death Ray!  For those times when you want to be 100% certain that your enemies are dead!
-				<br> Add to shopping cart -- <input type="checkbox" name="superdeathray"></p>
+				<p onclick="toggleVisible('#ray')"> Super Death Ray<br>
+				<span class="iteminfo" id="ray"> <img src="deathray.jpg"> You can't go wrong with the Super Death Ray!  For those times when you want to be 100% certain that your enemies are dead!
+				</span>  Add to shopping cart -- <input type="checkbox" name="superdeathray"></p><br><br>
 
-				<p> Evil High-backed Chair <br>
-				What's an evil villain without his fancy chair?  Don't be caught without yours!  Not only does this chair keep your comfortable, it gives you the back support you need to keep you limber and ready for battle!
-				<br> Add to shopping cart -- <input type="checkbox" name="evilchair"></p>
+				<p onclick="toggleVisible('#chair')"> Evil High-backed Chair <br>
+				<span class="iteminfo" id="chair"> <img src="evilchair.jpg"> What's an evil villain without his fancy chair?  Don't be caught without yours!  Not only does this chair keep your comfortable, it gives you the back support you need to keep you limber and ready for battle!
+				</span> Add to shopping cart -- <input type="checkbox" name="evilchair"></p><br><br>
 
-				<p> Spiked Pit <br>
-				Tired of "heroes" sneaking into your lair?  This spiked pit is guaranteed to put an end to that!  Order this spike pit and our crew of trained professionals will install it in your lair!  (Carpet to hide spike pit not included)
-				<br> Add to shopping cart -- <input type="checkbox" name="spikepit"></p>
+				<p onclick="toggleVisible('#pit')"> Spiked Pit <br>
+				<span class="iteminfo" id="pit"><img src="spikepit.jpg">  Tired of "heroes" sneaking into your lair?  This spiked pit is guaranteed to put an end to that!  Order this spike pit and our crew of trained professionals will install it in your lair!  (Carpet to hide spike pit not included)
+				</span> Add to shopping cart -- <input type="checkbox" name="spikepit"></p><br><br>
 
-				<p> Jellyfish Tank <br>
-				Don't think your lair is evil enough?  Nothing gives off the "I'm out to destroy the world" vibe more than a giant tank of jelly fish!
-				<br> Add to shopping cart -- <input type="checkbox" name="jellyfishtank"></p>
+				<p onclick="toggleVisible('#jellyfish')"> Jellyfish Tank <br>
+				<span class="iteminfo" id="jellyfish"> <img src="jellyfishtank.jpg"> Don't think your lair is evil enough?  Nothing gives off the "I'm out to destroy the world" vibe more than a giant tank of jelly fish!
+				</span> Add to shopping cart -- <input type="checkbox" name="jellyfishtank"></p><br><br>
 
-				<p> Self Destruct Button <br>
-				What's a secret weapon without a self destruct button?  You won't find a bigger or redder self destruct button than ours!
-				<br> Add to shopping cart -- <input type="checkbox" name="selfdestructbutton"></p>
+				<p onclick="toggleVisible('#selfdestruct')"> Self Destruct Button <br>
+				<span class="iteminfo" id="selfdestruct"> <img src="selfdestructbutton.jpeg"> What's a secret weapon without a self destruct button?  You won't find a bigger or redder self destruct button than ours!
+				</span> Add to shopping cart -- <input type="checkbox" name="selfdestructbutton"></p><br><br>
 
 			<br><br><input type="submit">
 		</form>

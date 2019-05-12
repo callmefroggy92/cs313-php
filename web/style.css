@@ -4,13 +4,21 @@ body{
 	background-color: #FFD;
 }
 
+@keyframes expand{
+	0% {width: 20%; }
+	25% {width: 60%; }
+	100% {width: 95%; }
+}
+
 #header{
 	font-weight: bold;
 	border-radius: 15px;
 	background-color: #99C;
 	padding: 10px;
 	margin: 10px;
-	width:100%;
+	width:95%;
+	animation-name: expand;
+	animation-duration: 3s;
 }
 
 #menu{
@@ -32,7 +40,7 @@ body{
 
 .submenu-content{
 	cursor:pointer;
-	width:100%;
+	width:95%;
 	padding: 0px;
 	margin: 0px;
 	background-color: #CAE;

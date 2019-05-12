@@ -23,7 +23,7 @@
 				State: <input type="text" name="state"><br><br>
 				Zip Code: <input type="text" name="zip"><br><br>
 	
-				<input type="submit">
+				<input type="submit"> <input type="submit" value="Return to Browse" formaction="browse.php">
 			</p>
 
 		</form>
