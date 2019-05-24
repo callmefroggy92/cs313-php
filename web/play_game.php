@@ -30,6 +30,7 @@ catch (PDOException $ex)
 
 			foreach ($db->query('SELECT * FROM player') as $row)
 			{
+				echo 'test';
 				echo 'Player Name: ' . $row['name'];
 				echo ' Faction: ' . $row['faction'];
 				echo '<br/>';
