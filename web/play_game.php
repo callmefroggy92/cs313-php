@@ -1,7 +1,7 @@
 <HTML>
 	<HEAD>
 		<style>
-			#id{
+			#player{
 				width:40%;
 				background-color:#CCC;
 				height:100%;
