@@ -1,5 +1,12 @@
 <HTML>
 	<HEAD>
+		<style>
+			#id{
+				width:40%;
+				background-color:#CCC;
+				height:100%;
+			}
+		</style>
 	</HEAD>
 
 	<BODY>
@@ -45,12 +52,13 @@
 
 			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row)
 			{
-				echo 'Player Name: ' . $row['name'];
-				echo ' Faction: ' . $row['faction'];
-				$army = explode(" ", $row['army']);
-				
+				echo "<span id='player'>";
+					echo 'Player Name: ' . $row['name'];
+					echo ' Faction: ' . $row['faction'];
+					$army = explode(" ", $row['army']);
+				echo "</span>";				
+
 				foreach($army as $line){
-					echo $line;
 					$c = new Character($line);
 					$c->show();
 					echo '<br/>';
