@@ -2,9 +2,10 @@
 	<HEAD>
 		<style>
 			#player{
-				width:40%;
+				width:60%;
 				background-color:#CCC;
-				height:100%;
+				margin:10px;
+				padding:10px;
 			}
 		</style>
 	</HEAD>
