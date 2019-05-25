@@ -47,6 +47,7 @@
 				$army = explode(" ", $row['army']);
 				
 				foreach($army as $line){
+					echo $army;
 					$c = new Character($army);
 					$c->show();
 					echo '<br/>';
