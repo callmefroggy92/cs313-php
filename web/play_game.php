@@ -40,10 +40,10 @@
 
   				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-			$player1 = "testPlayer1";
-			$player2 = "testPlayer2";
+			$player1 = "testPlayer3";
+			$player2 = "testPlayer4";
 
-			foreach ($db->query('SELECT * FROM player WHERE name = ' . $player1) as $row)
+			foreach ($db->query("SELECT * FROM player WHERE name ='$player1'") as $row)
 			{
 				echo 'Player Name: ' . $row['name'];
 				echo ' Faction: ' . $row['faction'];
