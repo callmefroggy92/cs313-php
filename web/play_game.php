@@ -54,8 +54,11 @@
 			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row)
 			{
 				echo "<div id='player'>";
+					echo '<h1>';
 					echo 'Player Name: ' . $row['name'];
+					echo '</h1><h2>';
 					echo ' Faction: ' . $row['faction'];
+					echo '</h2>';
 					$army = explode(" ", $row['army']);				
 
 				foreach($army as $line){
