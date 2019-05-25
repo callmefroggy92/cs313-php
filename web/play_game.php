@@ -43,7 +43,7 @@
 			$player1 = "testPlayer1";
 			$player2 = "testPlayer2";
 
-			foreach ($db->query('SELECT * FROM player WHERE name = $player1') as $row)
+			foreach ($db->query('SELECT * FROM player WHERE name = ' . $player1) as $row)
 			{
 				echo 'Player Name: ' . $row['name'];
 				echo ' Faction: ' . $row['faction'];
