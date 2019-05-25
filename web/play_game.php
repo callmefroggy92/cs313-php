@@ -45,6 +45,7 @@
 				echo 'Player Name: ' . $row['name'];
 				echo ' Faction: ' . $row['faction'];
 				$army = explode(" ", $row['army']);
+				echo $army;
 				foreach($army as $line){
 					$c = new Character($row['army']);
 					$c->show();
