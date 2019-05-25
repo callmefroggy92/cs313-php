@@ -52,17 +52,17 @@
 
 			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row)
 			{
-				echo "<span id='player'>";
+				echo "<div id='player'>";
 					echo 'Player Name: ' . $row['name'];
 					echo ' Faction: ' . $row['faction'];
-					$army = explode(" ", $row['army']);
-				echo "</span>";				
+					$army = explode(" ", $row['army']);				
 
 				foreach($army as $line){
 					$c = new Character($line);
 					$c->show();
 					echo '<br/>';
 				}
+				echo "</div>";
 			}
 
 			
