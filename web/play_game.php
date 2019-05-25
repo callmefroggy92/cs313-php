@@ -15,10 +15,13 @@
 					if ($str[1] == 's'){
 						$this->class = 'solider';
 					}
+					elseif($str[1] == 'w'){
+						$this->class = 'warrior';
+					}
 				}
 
 				public function show(){
-					echo $this->race . " -- " . $this->class;
+					echo "<br><br>" . $this->race . " -- " . $this->class;
 				}
 			}
 			try
@@ -41,9 +44,12 @@
 			{
 				echo 'Player Name: ' . $row['name'];
 				echo ' Faction: ' . $row['faction'];
-				$c = new Character($row['army']);
-				$c->show();
-				echo '<br/>';
+				$army = explode(" ", $row['army']);
+				foreach($army as $line){
+					$c = new Character($row['army']);
+					$c->show();
+					echo '<br/>';
+				}
 			}
 
 			
