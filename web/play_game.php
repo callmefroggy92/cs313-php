@@ -86,8 +86,8 @@
 				$army = explode(" ", $row['army']);				
 
 				foreach($army as $line){
-					// $c = new Character($line);
-					// $c->show();
+					$c = new Character($line);
+					$c->show();
 					echo '<br/>';
 				}
 				echo "</div>";
