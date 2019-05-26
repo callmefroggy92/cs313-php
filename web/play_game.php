@@ -17,7 +17,6 @@
 			class Character{
 
 				public function __construct($str){
-					this->health = int($str[2]);
 					if ($str[0] == 'h'){
 						$this->race = 'Human';
 					
