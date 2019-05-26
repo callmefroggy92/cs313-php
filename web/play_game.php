@@ -75,8 +75,7 @@
 			$player1 = "testPlayer1";
 			$player2 = "testPlayer2";
 
-			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row)
-			{
+			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row){
 				echo "<div id='player'>";
 				echo '<h1>';
 				echo 'Player Name: ' . $row['name'];
@@ -86,20 +85,15 @@
 				$army = explode(" ", $row['army']);				
 
 				foreach($army as $line){
-					$c = new Character($line);
-					$c->show();
+					//$c = new Character($line);
+					// $c->show();
 					echo '<br/>';
 				}
 				echo "</div>";
-			}
-
-
-
-			
+			}			
 
 			}
-			catch (PDOException $ex)
-			{
+			catch (PDOException $ex){
   				echo 'Error!: ' . $ex->getMessage();
   				die();
 			}
