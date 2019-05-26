@@ -17,19 +17,43 @@
 			class Character{
 
 				public function __construct($str){
+					this->health = int($str[2]);
 					if ($str[0] == 'h'){
-						$this->race = 'human';
+						$this->race = 'Human';
+					
+						if ($str[1] == 's'){
+							$this->class = 'Solider'
+							$this->desc = "A powerful and trained human soldier, disciplined in the arts of shooting and guerrila warfare.";
+						}
+						elseif($str[1] == 'w'){
+							$this->class = 'Warrior';
+							$this->desc = "A power warrior, specializing in all forms of hand-to-hand combat.";
+						}
+						elseif($str[1] == 'r'){
+							this->class = "Sniper";
+							this->desc = "A human trained in covert ops.  A sniper specializes in taking out high-priority targets.";
+						}
 					}
-					if ($str[1] == 's'){
-						$this->class = 'solider';
-					}
-					elseif($str[1] == 'w'){
-						$this->class = 'warrior';
+
+					elseif($str[0] == 'x'){
+						$this->race = 'Xenos';
+				
+						if ($str[1] == 's'){
+							$this->class = 'Soldier';
+							$this->desc = "A foot soldier for the Xenos, wielding advanced weaponry.";
+						}
+						elseif ($str[1]] == 'w'){
+							$this->class = 'Warrior';
+							$this->desc = "A Xenos brute.  He has strength and speed surpassing any creature native to Terra.";
+						}
 					}
 				}
 
 				public function show(){
 					echo "<br><br>" . $this->race . " -- " . $this->class;
+					echo "<br> Health Remaining: " . $this->health;
+					echo "<br> " . $this->desc;
+					
 				}
 			}
 			try
@@ -48,8 +72,8 @@
 
   				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-			$player1 = "testPlayer3";
-			$player2 = "testPlayer4";
+			$player1 = "testPlayer1";
+			$player2 = "testPlayer2";
 
 			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row)
 			{
