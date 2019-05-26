@@ -17,7 +17,7 @@
 			class Character{
 
 				public function __construct($str){
-					$this->health = int($str[2]);
+					// $this->health = int($str[2]);
 					if ($str[0] == 'h'){
 						$this->race = 'Human';
 					
@@ -85,8 +85,8 @@
 				$army = explode(" ", $row['army']);				
 
 				foreach($army as $line){
-					//$c = new Character($line);
-					// $c->show();
+					$c = new Character($line);
+					$c->show();
 					echo '<br/>';
 				}
 				echo "</div>";
