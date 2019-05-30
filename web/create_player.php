@@ -14,13 +14,16 @@
 		<form action="create_player.php" method="post">
 			<input type="text" name="name">
 			<input type="text" name="faction">
-			<input type="text" name="army">
 			<input type="submit">
 		</form>
 
 		<br><br>
 		<div id="armyButtons">
-			<p> Human Warrior <button onclick="add_to_army('hs3')"></p>
+			<p> Human Warrior <button onclick="add_to_army('hw3 ')"></p>
+
+			<p> Human Soldier <button onclick="add_to_army('hs3 ')"></p>
+
+			<p> Human Sniper <button onclick="add_to_army('hr3 ')"></p>
 		</div>
 		<br>
 		<span id="armySpan"></span>
@@ -42,7 +45,7 @@
   				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$name = $_POST["name"];
 				$faction = $_POST["faction"];
-				$army = $_POST["army"];
+				$army = "<script> document.writeln(army);</script";
 				$id = rand(00000,99999);
 				$vp = 0;
 				$db->exec("INSERT INTO player VALUES('$name','$faction','$army','$vp','$id');");
