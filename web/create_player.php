@@ -19,11 +19,11 @@
 
 		<br><br>
 		<div id="armyButtons">
-			<p> Human Warrior <button onclick="add_to_army('hw3 ')"></p>
+			<p> Human Warrior <button onclick="add_to_army('hw3 ')">ADD</button></p>
 
-			<p> Human Soldier <button onclick="add_to_army('hs3 ')"></p>
+			<p> Human Soldier <button onclick="add_to_army('hs3 ')">ADD</button></p>
 
-			<p> Human Sniper <button onclick="add_to_army('hr3 ')"></p>
+			<p> Human Sniper <button onclick="add_to_army('hr3 ')">ADD</button></p>
 		</div>
 		<br>
 		<span id="armySpan"></span>
