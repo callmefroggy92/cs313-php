@@ -1,6 +1,13 @@
 <HTML>
 	<HEAD>
+		<script>
+			army = "";
 
+				function add_to_army(val){
+					army += val;
+					document.getElementById("armySpan").innerHTML = army;
+				}
+		</script>
 	</HEAD>
 
 	<BODY>
@@ -10,6 +17,13 @@
 			<input type="text" name="army">
 			<input type="submit">
 		</form>
+
+		<br><br>
+		<div id="armyButtons">
+			<p> Human Warrior <button onclick="add_to_army('hs3')"></p>
+		</div>
+		<br>
+		<span id="armySpan"></span>
 		<?php           
 			if($_SERVER['REQUEST_METHOD']=='POST'){
 			try{
