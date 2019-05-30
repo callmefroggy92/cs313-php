@@ -4,7 +4,7 @@
 	</HEAD>
 
 	<BODY>
-		<form action="createPlayer()" method="post">
+		<form action="create_player.php" method="post">
 			<input type="text" name="name">
 			<input type="text" name="faction">
 			<input type="text" name="army">
