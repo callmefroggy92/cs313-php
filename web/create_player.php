@@ -6,6 +6,7 @@
 				function add_to_army(val){
 					army += val;
 					document.getElementById("armySpan").innerHTML = army;
+					document.cookie = "army="+army;
 				}
 		</script>
 	</HEAD>
@@ -45,7 +46,7 @@
   				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$name = $_POST["name"];
 				$faction = $_POST["faction"];
-				$army = "<script> document.writeln(army);</script";
+				$army = $_COOKIE["army"];
 				$id = rand(00000,99999);
 				$vp = 0;
 				$db->exec("INSERT INTO player VALUES('$name','$faction','$army','$vp','$id');");
