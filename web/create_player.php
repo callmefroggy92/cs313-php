@@ -10,8 +10,8 @@
 			<input type="text" name="army">
 			<input type="submit">
 		</form>
-		<?php
-			function createPlayer(){
+		<?php           
+			if($_SERVER['REQUEST_METHOD']=='POST'){
 			try{
   				$dbUrl = getenv('DATABASE_URL');
 
