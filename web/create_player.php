@@ -31,7 +31,7 @@
 				$army = $_POST["army"];
 				$id = rand(00000,99999);
 				$vp = 0;
-				$db->exec("INSERT INTO player VALUES('$name','$faction','$army','$id','vp');");
+				$db->exec("INSERT INTO player VALUES('$name','$faction','$army','$id','$vp');");
 				foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row){
 
 					echo $row["name"];
