@@ -89,7 +89,7 @@
 					$c->show();
 					echo '<br/>';
 				}
-				echo "</div>";
+				echo "<br><br></div>";
 			}			
 
 			}
