@@ -72,8 +72,8 @@
 
   				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-			$player1 = "testPlayer1";
-			$player2 = "testPlayer2";
+			$player1 = $_POST["player1"];
+			$player2 = "$_POST["player2"];
 
 			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row){
 				echo "<div id='player'>";
