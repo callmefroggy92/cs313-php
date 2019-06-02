@@ -13,6 +13,15 @@
 				}
 		</script>
 		<style>
+			#main{
+				background-color:#DDD;
+				margin:15px;
+				padding:15px;
+				width:60%;
+				height:100%;
+			}
+		</style>
+
 	</HEAD>
 
 	<BODY>

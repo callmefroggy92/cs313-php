@@ -38,7 +38,7 @@
 					$vp = 0;
 					$db->exec("INSERT INTO player VALUES('$name','$faction','$army','$vp','$id');");
 
-					echo "<h3>Your player ID is: " . $id . "</h3>;
+					echo "<h3>Your player ID is: " . $id . "</h3>";
 					echo "<h4>You can create another player, or input two player IDs below and hit START GAME to begin the game!</h4>";
 				
 				}
