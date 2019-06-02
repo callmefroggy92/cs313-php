@@ -1,9 +1,19 @@
 <html>
 	<head>
+		<style>
+			#main{
+				background-color:#DDD;
+				margin:15px;
+				padding:15px;
+				width:60%;
+				height:100%;
+			}
+		</style>
 	</head>
 	
 
 	<body>
+		<div id="main">
 		<?php           
 			if($_SERVER['REQUEST_METHOD']=='POST'){
 				try{
@@ -27,7 +37,8 @@
 					$vp = 0;
 					$db->exec("INSERT INTO player VALUES('$name','$faction','$army','$vp','$id');");
 
-					echo "Your player ID is: " . $id;
+					echo "<h3> Your player ID is: " . $id . "</h3>";
+					echo "<h4> You can create another player, or input two player IDs below and hit START GAME to begin the game!</h4>";
 				
 				}
 				catch (PDOException $ex){
@@ -39,13 +50,14 @@
 
 		<br><br>
 		<form action="create_player.php">
-			<input type="submit" text="Create Another Player">
+			<input type="submit" value="Create Another Player">
 		</form
 		<br><br>
 		<form action="play_game.php" method="get">
-			<input type="text" name="player1">
-			<input type="text" name="player2">
-			<input type="submit" text="Start Game">
+			<input type="text" name="player1" placeholder="Enter Player 1 ID">
+			<input type="text" name="player2" placeholder="Enter Player 2 ID">
+			<input type="submit" value="Start Game">
 		</form>
+		</div>
 	</body>
 </html>
