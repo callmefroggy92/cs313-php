@@ -26,6 +26,7 @@
 
 			<p> Human Sniper <button onclick="add_to_army('hr3 ')">ADD</button></p>
 		</div>
+
 		<br>
 		<span id="armySpan"></span>
 

@@ -51,7 +51,7 @@
 		<br><br>
 		<form action="create_player.php">
 			<input type="submit" value="Create Another Player">
-		</form
+		</form>
 		<br><br>
 		<form action="play_game.php" method="get">
 			<input type="text" name="player1" placeholder="Enter Player 1 ID">
