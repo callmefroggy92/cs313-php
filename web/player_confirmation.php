@@ -42,7 +42,7 @@
 			<input type="submit" text="Create Another Player">
 		</form
 		<br><br>
-		<form action="play_game.php">
+		<form action="play_game.php" method="post">
 			<input type="text" name="player1" text="Enter Player 1 ID">
 			<input type="text" name="player2" text="Enter Player 2 ID">
 			<input type="submit" text="Start Game">
