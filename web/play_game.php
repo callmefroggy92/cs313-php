@@ -75,7 +75,7 @@
 			$player1 = $_POST["player1"];
 			$player2 = "$_POST["player2"];
 
-			foreach ($db->query("SELECT * FROM player WHERE name ='$player1' or name ='$player2'") as $row){
+			foreach ($db->query("SELECT * FROM player WHERE id='$player1' or id='$player2'") as $row){
 				echo "<div id='player'>";
 				echo '<h1>';
 				echo 'Player Name: ' . $row['name'];
