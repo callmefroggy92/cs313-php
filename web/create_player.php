@@ -25,6 +25,7 @@
 		</form>
 
 		<br><br>
+
 		<div id="armyButtons">
 			<p> Human Warrior <button onclick="add_to_army('hw3 ', 'Human Warrior')">ADD</button></p>
 

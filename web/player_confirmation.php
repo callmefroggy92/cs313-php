@@ -21,6 +21,7 @@
 	
   					$dbOpts = parse_url($dbUrl);
 	
+
   					$dbHost = $dbOpts["host"];
   					$dbPort = $dbOpts["port"];
   					$dbUser = $dbOpts["user"];
