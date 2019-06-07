@@ -11,18 +11,10 @@
 					document.cookie = "army="+army+";domain=;path=/";
 				}
 		</script>
-		<style>
-			#main{
-				background-color:#DDD;
-				margin:15px;
-				padding:15px;
-				width:60%;
-				height:100%;
-			}
-		</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	</HEAD>
 	<BODY>
-		<div id="main">
+		<div id="content">
 		<h3> Create your Army Below!  Enter your information, then use the buttons to add units! </h3>
 		<form action="player_confirmation.php" method="post">
 			<input type="text" name="name">

@@ -13,7 +13,7 @@
 	
 
 	<body>
-		<div id="main">
+		<div id="content">
 		<?php           
 			if($_SERVER['REQUEST_METHOD']=='POST'){
 				try{

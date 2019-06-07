@@ -1,13 +1,6 @@
 <HTML>
 	<HEAD>
-		<style>
-			#player{
-				width:60%;
-				background-color:#CCC;
-				margin:10px;
-				padding:10px;
-			}
-		</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	</HEAD>
 
 	<BODY>
@@ -66,7 +59,7 @@
 			$player1 = (int)$_GET["player1"];
 			$player2 = (int)$_GET["player2"];
 			foreach ($db->query("SELECT * FROM player WHERE id='$player1' or id='$player2'") as $row){
-				echo "<div id='player'>";
+				echo "<div id='content'>";
 				echo '<h1>';
 				echo 'Player Name: ' . $row['name'];
 				echo '</h1><h2>';
