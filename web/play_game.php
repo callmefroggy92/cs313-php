@@ -14,6 +14,10 @@
 			}
 			
 		</style>
+
+		<script>
+
+		</script>
 	</HEAD>
 
 	<BODY>
@@ -79,6 +83,8 @@
 						$unit += 'r';
 			
 					$unit += $this->health;
+
+					return $unit;
 				}	
 
 			}
