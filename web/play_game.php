@@ -92,7 +92,7 @@
 				}
 
 				echo "test";
-				echo $str;
+				echo $army;
 				return $str;
 			}
 
