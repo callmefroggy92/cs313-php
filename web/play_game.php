@@ -91,6 +91,8 @@
 					$str += $unit->return_unit();
 				}
 
+				echo "test";
+				echo $str;
 				return $str;
 			}
 
