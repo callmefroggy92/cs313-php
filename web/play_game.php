@@ -126,6 +126,7 @@
 
 				foreach($army as $line){
 					$c = new Character($line);
+					array_push($army,$c);
 					$c->show();
 					echo '<br/>';
 				}
