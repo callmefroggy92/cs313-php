@@ -122,7 +122,7 @@
 					$c = new Character($line);
 					array_push($army,$c->return_unit());
 					$c->show();
-					echo '<br/>';
+					echo '<br>' . $army . '<br>';
 				}
 				echo "<br><br></div>";
 	
