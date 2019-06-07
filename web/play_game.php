@@ -79,8 +79,6 @@
 						$unit += 'w';
 					elseif ($this->class = "Sniper")
 						$unit += 'r';
-			
-					$unit += $this->health;
 
 					echo $unit;
 
