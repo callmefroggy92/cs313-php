@@ -77,7 +77,7 @@
 		</script>
 	</HEAD>
 
-	<BODY onload="create_player()">
+	<BODY onload="create_player">
 
 		<?php
   				$dbUrl = getenv('DATABASE_URL');
