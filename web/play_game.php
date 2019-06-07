@@ -67,7 +67,7 @@
 				}
 
 				public function return_unit(){
-					$unit = "";
+					$unit = "  kjlj  ";
 					if ($this->race == "Human")
 						$unit += "h";
 					elseif ($this->race == "Xenos")
