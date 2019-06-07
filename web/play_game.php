@@ -57,8 +57,8 @@
 				army.push(u);
 				}
 			return army;			
-			}			
-				*/				
+			}	
+				
 			function create_player(){
 				var player_content = 
 					"<h3> 
@@ -74,7 +74,7 @@
 
 				document.getElementById("player1").innerHTML = player_content;
 			} 
-								
+			*/					
 		</script>
 	</HEAD>
 
