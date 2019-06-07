@@ -4,7 +4,10 @@
 	width:60%;
 	margin:0% 8%;
 	padding:10%;
-	border-radius: 0px 30px;
+	border-style:grooved;
+	border-radius: 15px;
+	border-width: medium;
+	border-color:red;
 }
 
 body{
