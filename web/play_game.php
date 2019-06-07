@@ -130,7 +130,7 @@
 
 				foreach($army as $line){
 					$c = new Character($line);
-					array_push($army,$c);
+					array_push($army,$c->return_unit());
 					$c->show();
 					echo '<br/>';
 				}
