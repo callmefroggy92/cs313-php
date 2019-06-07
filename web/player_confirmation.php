@@ -1,13 +1,7 @@
 <html>
 	<head>
 		<style>
-			#main{
-				background-color:#DDD;
-				margin:15px;
-				padding:15px;
-				width:60%;
-				height:100%;
-			}
+			<link rel="stylesheet" type="text/css" href="style.css">
 		</style>
 	</head>
 	
