@@ -43,8 +43,6 @@
 							$this->class = "Sniper";
 							$this->desc = "A human trained in covert ops.  A sniper specializes in taking out high-priority targets.";
 						}
-
-						$army[] = $this;
 					}
 
 					elseif($str[0] == 'x'){
