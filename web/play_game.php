@@ -95,7 +95,6 @@
 			}
 
 
-
 			try
 			{
   				$dbUrl = getenv('DATABASE_URL');
