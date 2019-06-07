@@ -68,17 +68,7 @@
 
 				public function return_unit(){
 					$unit = "  kjlj  ";
-					if ($this->race == "Human")
-						$unit += "h";
-					elseif ($this->race == "Xenos")
-						$unit += "x";
 
-					if ($this->class == "Solider")
-						$unit += "s";
-					elseif ($this->class == "Warrior")
-						$unit += "w";
-					elseif ($this->class == "Sniper")
-						$unit += "r";
 
 					echo $unit;
 
