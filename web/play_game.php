@@ -82,6 +82,8 @@
 			
 					$unit += $this->health;
 
+					echo $unit;
+
 					return $unit;
 				}	
 
