@@ -65,7 +65,7 @@
 					</h3>
 					<br><br>
 					<h4> 
-						<?p echo get_player1_faction(); ?>
+						<?php echo get_player1_faction(); ?>
 					</h4>";
 
 				document.getElementById("player1").innerHTML = player_content;
