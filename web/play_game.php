@@ -3,10 +3,16 @@
 		<style>
 			#player{
 				width:60%;
-				background-color:#CCC;
+				background-color:#222;
 				margin:10px;
 				padding:10px;
+				color: white;
 			}
+
+			body{
+				background-color:#CCC;
+			}
+			
 		</style>
 	</HEAD>
 
@@ -33,6 +39,8 @@
 							$this->class = "Sniper";
 							$this->desc = "A human trained in covert ops.  A sniper specializes in taking out high-priority targets.";
 						}
+
+						$army[] = $this;
 					}
 
 					elseif($str[0] == 'x'){
@@ -55,7 +63,39 @@
 					echo "<br> " . $this->desc;
 					
 				}
+
+				public return_unit(){
+					unit = "";
+					if ($this->race = "Human")
+						unit += 'h';
+					elseif ($this->race = "Xenos")
+						unit += 'x';
+
+					if ($this->class = "Solider")
+						unit += 's';
+					elseif ($this->class = "Warrior")
+						unit += 'w';
+					elseif ($this->class = "Sniper")
+						unit += 'r';
+			
+					unit += $this->health;
+				}	
+
 			}
+
+			$army = array();
+		
+			function return_army(){
+				$str = "";
+				foreach($army as $unit){
+					$str += $unit->return_unit();
+				}
+
+				return $str;
+			}
+
+
+
 			try
 			{
   				$dbUrl = getenv('DATABASE_URL');
@@ -89,6 +129,8 @@
 					echo '<br/>';
 				}
 				echo "<br><br></div>";
+	
+				echo return_army();
 			}			
 
 			}
