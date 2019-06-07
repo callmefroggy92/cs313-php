@@ -68,6 +68,9 @@
 						<?php echo get_player1_faction(); ?>
 					</h4>";
 
+					console.log("test");
+					console.log(player_content);
+
 				document.getElementById("player1").innerHTML = player_content;
 			} 
 											
