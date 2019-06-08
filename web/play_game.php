@@ -22,32 +22,15 @@
   				die();
 			} 
 			?>
-			function updateP1Points(inc){
+		
+			function loadP1Points(){
+				p1Points = <?php
+					$id = (int)$_GET["player1"];
+					echo $db->query("SELECT victory_points FROM player WHERE id='$id'");
+					?>
 				p1 = document.getElementById("p1");
-				p1Points = 0;
-				if(inc == '+')
-					p1Points = <?php
-						$id = (int)$_GET["player1"];
-						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) + 1;
-						db->query("UPDATE player SET victory_points='$points' WHERE id='$id');
-						?>
-					loadP1Points();
-				}
-
-				else if(inc == '-'){
-				p1 = document.getElementById("p1");
-				p1Points = 0;
-				if(inc == '+')
-					p1Points = <?php
-						$id = (int)$_GET["player1"];
-						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) - 1;
-						db->query("UPDATE player SET victory_points='$points' WHERE id='$id');
-						?>
-					loadP1Points();
-				}
-
-			}		
-					
+				p1.innerHTML = p1Points;
+			}
 			
 		</script>
 	</HEAD>
@@ -59,7 +42,7 @@
 			<br>
 			Victory Points Player 1: <span id="p1">0</span> **** </span> <span id="turn"> Turn 1 </span> ****  Victory Points Player 2: <span id="p2">0</span>
 			<br>
-			<button>-</button><button">+</button> <button>Next Turn</button> <button>-</button><button>+</button>
+			<button>-</button><button>+</button> <button>Next Turn</button> <button>-</button><button>+</button>
 		</div><br><br>
 		<?php
 			class Character{
