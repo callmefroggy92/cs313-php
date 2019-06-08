@@ -142,6 +142,7 @@
 					}
 				$points1 = $db->query("SELECT victory_points FROM player WHERE id='$player1'");
 				$points2 = $db->query("SELECT victory_points FROM player WHERE id='$player2'");
+				echo ' <script> loadPoints(' . $points1 . '  ,  ' . $points2 . ' ); </script>';
 
 				echo "<br><br></div>";
 				}
