@@ -21,35 +21,17 @@
   				echo 'Error!: ' . $ex->getMessage();
   				die();
 			} 
-			?>
-		
-			function loadP1Points(){
+			?>					
+			function loadPoints(){
+				document.getElementById("p1").innerHTML = <?php
+					$id1 = (int)$_GET["player1"]; 
+					echo $db->query("SELECT victory_points FROM player WHERE id='$id1'"); 
+				?>
+				document.getElementById("p2").innerHTML = 
+					<?php echo $db->query("SELECT victory_points FROM player WHERE id='$id2'"); 
+					$id2 = (int)$_GET["player2"];?>
 			}
-		
-			function updateP1Points(inc){
-				p1 = document.getElementById("p1");
-				p1Points = 0;
-				if(inc == '+'){
-					p1Points = <?php
-						$id = (int)$_GET["player1"];
-						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) + 1;
-						?>
-					loadP1Points();
-				}
 
-				else if(inc == '-'){
-				p1 = document.getElementById("p1");
-				p1Points = 0;
-				if(inc == '+'){
-					p1Points = <?php
-						$id = (int)$_GET["player1"];
-						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) - 1;
-						?>
-					loadP1Points();
-				}
-
-			}		
-					
 			
 		</script>
 	</HEAD>
@@ -61,7 +43,13 @@
 			<br>
 			Victory Points Player 1: <span id="p1">0</span> **** </span> <span id="turn"> Turn 1 </span> ****  Victory Points Player 2: <span id="p2">0</span>
 			<br>
-			<button>-</button><button>+</button> <button>Next Turn</button> <button>-</button><button>+</button>
+			<form action="play_game.php" method="get">
+  				<input type="hidden" name="player1" value="<?php echo htmlspecialchars($_GET['name']);?>">
+ 				<input type="hidden" name="player2" value="<?php echo htmlspecialchars($_GET['lName']);?>">
+				<input type="text" name="player1VP">
+				<input type="text" name="player2VP">
+				<input type="submit" text="Next Turn">
+			</form>
 		</div><br><br>
 		<?php
 			class Character{
