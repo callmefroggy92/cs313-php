@@ -23,15 +23,6 @@
 			} 
 			?>
 		
-			function loadP1Points(){
-				p1Points = <?php
-					$id = (int)$_GET["player1"];
-					echo $db->query("SELECT victory_points FROM player WHERE id='$id'");
-					?>
-				p1 = document.getElementById("p1");
-				p1.innerHTML = p1Points;
-			}
-		
 			function updateP1Points(inc){
 				p1 = document.getElementById("p1");
 				p1Points = 0;
