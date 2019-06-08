@@ -3,7 +3,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 		<script>
-
+		/*
 			function loadP1Points(){
 				p1Points = <?php
 					$id = (int)$_GET["player1"];
@@ -39,7 +39,7 @@
 
 			}				
 					
-
+			*/
 		</script>
 	</HEAD>
 
