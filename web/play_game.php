@@ -50,7 +50,7 @@
 			<br>
 			Victory Points Player 1: <span id="p1">0</span> **** </span> <span id="turn"> Turn 1 </span> ****  Victory Points Player 2: <span id="p2">0</span>
 			<br>
-			<button onclick="updateP1Points('-')">-</button><button onclick="updateP1Points('+')">+</button> <button>Next Turn</button> <button>-</button><button>+</button>
+			<button>-</button><button">+</button> <button>Next Turn</button> <button>-</button><button>+</button>
 		</div><br><br>
 		<?php
 			class Character{
