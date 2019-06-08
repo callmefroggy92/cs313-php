@@ -23,6 +23,9 @@
 			} 
 			?>
 		
+			function loadP1Points(){
+			}
+		
 			function updateP1Points(inc){
 				p1 = document.getElementById("p1");
 				p1Points = 0;
