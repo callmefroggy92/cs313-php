@@ -3,6 +3,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 		<script>
+			<?php
 			$db = null;
 			try
 			{
@@ -19,7 +20,8 @@
 			catch (PDOException $ex){
   				echo 'Error!: ' . $ex->getMessage();
   				die();
-			}
+			} 
+			?>
 		
 			function loadP1Points(){
 				p1Points = <?php
