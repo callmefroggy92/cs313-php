@@ -30,7 +30,6 @@
 			
 		</script>
 	</HEAD>
-
 	<BODY>
 
 		<div id="header">
