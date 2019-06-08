@@ -39,7 +39,6 @@
 					p1Points = <?php
 						$id = (int)$_GET["player1"];
 						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) + 1;
-						db->query("UPDATE player SET victory_points='$points' WHERE id='$id');
 						?>
 					loadP1Points();
 				}
@@ -51,7 +50,6 @@
 					p1Points = <?php
 						$id = (int)$_GET["player1"];
 						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) - 1;
-						db->query("UPDATE player SET victory_points='$points' WHERE id='$id');
 						?>
 					loadP1Points();
 				}
