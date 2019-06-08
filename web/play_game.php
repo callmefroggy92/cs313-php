@@ -15,14 +15,35 @@
 						if ($str[1] == 's'){
 							$this->class = 'Solider';
 							$this->desc = "A powerful and trained human soldier, disciplined in the arts of shooting and guerrila warfare.";
+							$this->stats = "Move -> 6   Armor -> 7  Strength -> 7  Bravery -> 11   Marksmanship -> 12";
+							$this->weapon = "Equipment: Standard Assault Rifle --  Range -> 18  Strength -> 9";
 						}
 						elseif($str[1] == 'w'){
 							$this->class = 'Warrior';
 							$this->desc = "A power warrior, specializing in all forms of hand-to-hand combat.";
+							$this->stats = "Move -> 7   Armor -> 9  Strength -> 10  Bravery -> 12   Marksmanship -> 7";
+							$this->weapon = "Equipment: .50 Pistol --  Range -> 6  Strength -> 12";
 						}
 						elseif($str[1] == 'r'){
 							$this->class = "Sniper";
 							$this->desc = "A human trained in covert ops.  A sniper specializes in taking out high-priority targets.";
+							$this->stats = "Move -> 5   Armor -> 5  Strength -> 6  Bravery -> 7   Marksmanship -> 16";
+							$this->weapon = "Equipment: Antique Sniper Rifle --  Range -> 36  Strength -> 12";
+						}elseif($str[1] == 'h'){
+							$this->class = "Hound";
+							$this->desc = "A near feral hound trained by human masters to hunt down their enemies";
+							$this->stats = "Move -> 12   Armor -> 5  Strength -> 8  Bravery -> 13   Marksmanship -> 0";
+							$this->weapon = "Equipment: None";
+						}elseif($str[1] == 't'){
+							$this->class = "Tactician";
+							$this->desc = "A veteran of the war, prized for his ability to analyze and deploy forces with surgical skill";
+							$this->stats = "Move -> 6   Armor -> 5  Strength -> 6  Bravery -> 10   Marksmanship -> 11";
+							$this->weapon = "Equipment: Standard Assault Rifle --  Range -> 18  Strength -> 9";
+						}elseif($str[1] == 'r'){
+							$this->class = "Guerrilla";
+							$this->desc = "Guerrilla fighters use whatever means necessary to take down their targets";
+							$this->stats = "Move -> 7   Armor -> 5  Strength -> 8  Bravery -> 14   Marksmanship -> 7";
+							$this->weapon = "Equipment: Makeshift Explosives --  Range -> 9  Strength -> 10   Radius -> 4";
 						}
 					}
 					elseif($str[0] == 'x'){
@@ -31,10 +52,24 @@
 						if ($str[1] == 's'){
 							$this->class = 'Soldier';
 							$this->desc = "A foot soldier for the Xenos, wielding advanced weaponry.";
+							$this->stats = "Move -> 6   Armor -> 7  Strength -> 7  Bravery -> 9   Marksmanship -> 9";
+							$this->weapon = "Equipment: Lasgun --  Range -> 12  Strength -> 10";
 						}
 						elseif ($str[1] == 'w'){
 							$this->class = 'Warrior';
 							$this->desc = "A Xenos brute.  He has strength and speed surpassing any creature native to Terra.";
+							$this->stats = "Move -> 9   Armor -> 12  Strength -> 10  Bravery -> 14   Marksmanship -> 3";
+							$this->weapon = "Equipment: Power Sword --  Range -> 2  Strength -> +3";
+						}elseif ($str[1] == 'l'){
+							$this->class = 'Warlord';
+							$this->desc = "A commander in the Xenos force.  While his main asset is his tactical ability, his foes know not to underestimate his fighting capacities.";
+							$this->stats = "Move -> 5   Armor -> 6  Strength -> 6  Bravery -> 14   Marksmanship -> 11";
+							$this->weapon = "Equipment: Incinerator Pistol --  Range -> 6  Strength -> 12";
+						}elseif ($str[1] == 't'){
+							$this->class = 'Thrasher';
+							$this->desc = "A Xenos of astounding size.  The mere sight of him terrifies all but the most steeled warriors.";
+							$this->stats = "Move -> 7   Armor -> 13  Strength -> 15  Bravery -> 18   Marksmanship -> 0";
+							$this->weapon = "None";
 						}
 					}
 				}
@@ -42,6 +77,8 @@
 					echo "<br><br>" . $this->race . " -- " . $this->class;
 					echo "<br> Health Remaining: " . $this->health;
 					echo "<br> " . $this->desc;
+					echo "<br>" . $this->stats;
+					echo "<br>" . $this->weapon;
 					
 				}
 			}
