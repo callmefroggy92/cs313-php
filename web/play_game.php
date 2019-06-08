@@ -36,7 +36,7 @@
 		</script>
 	</HEAD>
 
-	<BODY>
+	<BODY onload="loadPoints()">
 
 		<div id="header">
 			<h2> SHADOWS OF THE SUN </h2>
