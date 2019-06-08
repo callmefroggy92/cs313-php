@@ -1,4 +1,4 @@
-#header{
+#content{
 	background-color:#222;
 	color:white;
 	width:60%;
@@ -9,10 +9,10 @@
 	border-width: medium;
 	border-color:red;
 }
-#content{
+#header{
 	background-color:#222;
 	color:white;
-	width:60%;
+	width:80%;
 	margin:0% 8%;
 	border-style:grooved;
 	border-radius: 15px;
