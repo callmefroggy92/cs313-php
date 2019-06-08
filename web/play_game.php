@@ -39,7 +39,7 @@
 							$this->desc = "A veteran of the war, prized for his ability to analyze and deploy forces with surgical skill";
 							$this->stats = "Move -> 6   Armor -> 5  Strength -> 6  Bravery -> 10   Marksmanship -> 11";
 							$this->weapon = "Equipment: Standard Assault Rifle --  Range -> 18  Strength -> 9";
-						}elseif($str[1] == 'r'){
+						}elseif($str[1] == 'g'){
 							$this->class = "Guerrilla";
 							$this->desc = "Guerrilla fighters use whatever means necessary to take down their targets";
 							$this->stats = "Move -> 7   Armor -> 5  Strength -> 8  Bravery -> 14   Marksmanship -> 7";
