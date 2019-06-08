@@ -39,8 +39,8 @@
 			Victory Points Player 1: <span id="p1">0</span> **** </span> <span id="turn"> Turn 1 </span> ****  Victory Points Player 2: <span id="p2">0</span>
 			<br>
 			<form action="play_game.php" method="get">
-  				<input type="hidden" name="player1" value="<?php echo htmlspecialchars($_GET['name']);?>">
- 				<input type="hidden" name="player2" value="<?php echo htmlspecialchars($_GET['lName']);?>">
+  				<input type="hidden" name="player1" value="<?php echo htmlspecialchars($_GET['player1']);?>">
+ 				<input type="hidden" name="player2" value="<?php echo htmlspecialchars($_GET['player2']);?>">
 				<input type="text" name="player1VP">
 				<input type="text" name="player2VP">
 				<input type="submit" text="Next Turn">
