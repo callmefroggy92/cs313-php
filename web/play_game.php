@@ -5,8 +5,8 @@
 
 	<BODY>
 
-		<div id="content">
-			<h3> SHADOWS OF THE SUN </h3>
+		<div id="header">
+			<h2> SHADOWS OF THE SUN </h2>
 			<br>
 			Victory Points Player 1: <span id="p1">0</span> </span> <span id="turn"> Turn 1 </span> Victory Points Player 2: <span id="p2">0</span>
 			<br>
