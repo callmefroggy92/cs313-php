@@ -136,7 +136,7 @@
 				echo '</h2>';
 				echo '<h3>';
 				echo 'Victory Points: ' . $row['victory_points'];
-				echo '</h3>
+				echo '</h3>';
 				$army = explode(" ", $row['army']);				
 				foreach($army as $line){
 					$c = new Character($line);
