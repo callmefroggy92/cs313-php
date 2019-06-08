@@ -125,27 +125,27 @@
 				}
 			}
 			
-				$player1 = (int)$_GET["player1"];
-				$player2 = (int)$_GET["player2"];
-				foreach ($db->query("SELECT * FROM player WHERE id='$player1' or id='$player2'") as $row){
-					echo "<div id='content'>";
-					echo '<h1>';
-					echo 'Player Name: ' . $row['name'];
-					echo '</h1><h2>';
-					echo ' Faction: ' . $row['faction'];
-					echo '</h2>';
-					$army = explode(" ", $row['army']);				
-					foreach($army as $line){
-						$c = new Character($line);
-						$c->show();
-						echo '<br/>';
-					}
-				$points1 = $db->query("SELECT victory_points FROM player WHERE id='$player1'");
-				$points2 = $db->query("SELECT victory_points FROM player WHERE id='$player2'");
-				echo ' <script> loadPoints(' . $points1 . '  ,  ' . $points2 . ' ); </script>';
-
-				echo "<br><br></div>";
+			$player1 = (int)$_GET["player1"];
+			$player2 = (int)$_GET["player2"];
+			foreach ($db->query("SELECT * FROM player WHERE id='$player1' or id='$player2'") as $row){
+				echo "<div id='content'>";
+				echo '<h1>';
+				echo 'Player Name: ' . $row['name'];
+				echo '</h1><h2>';
+				echo ' Faction: ' . $row['faction'];
+				echo '</h2>';
+				$army = explode(" ", $row['army']);				
+				foreach($army as $line){
+					$c = new Character($line);
+					$c->show();
+					echo '<br/>';
 				}
+			$points1 = $db->query("SELECT victory_points FROM player WHERE id='$player1'");
+			$points2 = $db->query("SELECT victory_points FROM player WHERE id='$player2'");
+			echo ' <script> loadPoints( 3  ,  3 ); </script>';
+
+			echo "<br><br></div>";
+			}
 						
 			
 		?>
