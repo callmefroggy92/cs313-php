@@ -22,21 +22,16 @@
   				die();
 			} 
 			?>					
-			function loadPoints(){
-				document.getElementById("p1").innerHTML = <?php
-					$id1 = (int)$_GET["player1"]; 
-					echo $db->query("SELECT victory_points FROM player WHERE id='$id1'"); 
-				?>
-				document.getElementById("p2").innerHTML = 
-					<?php echo $db->query("SELECT victory_points FROM player WHERE id='$id2'"); 
-					$id2 = (int)$_GET["player2"];?>
+			function loadPoints(p1, p2){
+				document.getElementById("p1").innerHTML = p1
+				document.getElementById("p2").innerHTML = p2
 			}
 
 			
 		</script>
 	</HEAD>
 
-	<BODY onload="loadPoints()">
+	<BODY>
 
 		<div id="header">
 			<h2> SHADOWS OF THE SUN </h2>
@@ -144,6 +139,10 @@
 						$c->show();
 						echo '<br/>';
 					}
+				$points1 = $db->query("SELECT victory_points FROM player WHERE id='$player1'");
+				$points2 = $db->query("SELECT victory_points FROM player WHERE id='$player2'");
+				echo ' <script> loadPoints(' . $points1 . '  ,  ' . $points2 . ' ); </script>';
+
 				echo "<br><br></div>";
 				}
 						
