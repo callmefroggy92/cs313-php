@@ -59,6 +59,7 @@
 							$this->stats = "Move -> 6   Armor -> 7  Strength -> 7  Bravery -> 11   Marksmanship -> 12";
 							$this->weapon = "Equipment: Standard Assault Rifle --  Range -> 18  Strength -> 9";
 						}
+
 						elseif($str[1] == 'w'){
 							$this->class = 'Warrior';
 							$this->desc = "A power warrior, specializing in all forms of hand-to-hand combat.";
