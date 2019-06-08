@@ -1,8 +1,7 @@
 <html>
 	<head>
-		<style>
-			<link rel="stylesheet" type="text/css" href="style.css">
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
 	</head>
 	
 
