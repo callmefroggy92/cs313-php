@@ -1,46 +1,6 @@
 <HTML>
 	<HEAD>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-		<script>
-		/*
-			function loadP1Points(){
-				p1Points = <?php
-					$id = (int)$_GET["player1"];
-					echo $db->query("SELECT victory_points FROM player WHERE id='$id'");
-					?>
-				p1 = document.getElementById("p1");
-				p1.innerHTML = p1Points;
-				}
-
-			function updateP1Points(inc){
-				p1 = document.getElementById("p1");
-				p1Points = 0;
-				if(inc == '+')
-					p1Points = <?php
-						$id = (int)$_GET["player1"];
-						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) + 1;
-						db->query("UPDATE player SET victory_points='$points' WHERE id='$id');
-						?>
-					loadP1Points();
-				}
-
-				else if(inc == '-'){
-				p1 = document.getElementById("p1");
-				p1Points = 0;
-				if(inc == '+')
-					p1Points = <?php
-						$id = (int)$_GET["player1"];
-						$points = ((int)$db->query("SELECT victory_points FROM player WHERE id='$id'")) - 1;
-						db->query("UPDATE player SET victory_points='$points' WHERE id='$id');
-						?>
-					loadP1Points();
-				}
-
-			}				
-					
-			*/
-		</script>
 	</HEAD>
 
 	<BODY>
